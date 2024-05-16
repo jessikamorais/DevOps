@@ -43,8 +43,8 @@ jobs:
           file: ./1_primeiro_exemplo/src/Dockerfile
           push: true
           tags: |
-            fabricioveronez/aula-conversao-temperatura:v1
-            fabricioveronez/aula-conversao-temperatura:latest
+            jessikamorais/conversao-temperatura:v1
+            jessikamorais/conversao-temperatura:latest
         
 
     
