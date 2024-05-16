@@ -5,21 +5,19 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [main]
+
   workflow_dispatch:
 jobs:
-  build:
+  CI:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Runa  on-line script
-        run: echo Hello. World!
+      - uses: actions/checkout@v2
 
-      - name: Run a multi-line script
-        run:
-            echo Add other actions to build,
-            echo test and deploy your project.
+      - name: Setup do NodeJS
+      - uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 16.13.2
+  
 
     
 
